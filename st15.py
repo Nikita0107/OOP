@@ -16,16 +16,18 @@ class Class:
         self.c = c
     
     # Получает текущее значение getattr(self, name, None). Если атрибута нет, то возвращается None.
-    # родительский метод __setattr__ с помощью super()
     # __setattr__(name, value),  который отвечает за сохранение.
    
     def __setattr__(self, name, value):
         old_value = getattr(self, name, None)
-        super().__setattr__(name, value)
+        self.__dict__[name] = value  # сохранение нового значения атрибута
         if old_value != value:
             logging.info(f"{name} изменилось с {old_value} на {value}")
+            
+        
 
 
 cl = Class(5, 8, 7)
 cl.b = 99
 print(f"a = {cl.a}, b = {cl.b}, c = {cl.c}")
+print(cl.__dict__)
