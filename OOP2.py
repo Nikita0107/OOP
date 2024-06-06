@@ -1,11 +1,16 @@
 # class Calculator:
 #     def __init__(self):
 #         pass
-#     def sum(self, a, b):
+#
+#     @staticmethod
+#     def sum(a, b):
 #         return a + b
 #
+#
 # class Calculator2(Calculator):
-#     def summa_str(self, a, b):
+#
+#     @staticmethod
+#     def summa_str(a, b):
 #         return str(a) + str(b)
 #
 #
@@ -14,21 +19,26 @@
 # cl2 = Calculator2()
 # print(cl2.summa_str('qwe', '2'))
 
-from abc import ABC, abstractmethod
+from abc import abstractmethod
+
+
 class Animals:
+
     @abstractmethod
     def __init__(self):
         pass
+
+
 class Cat(Animals):
     def __init__(self):
         pass
-    
-    def voice(self):
+
+    @staticmethod
+    def voice():
         print('муррр')
+
 
 ct = Cat()
 print(ct.voice())
 
-
-    
-    
+cl = Animals

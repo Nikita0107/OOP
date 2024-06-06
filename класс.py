@@ -84,6 +84,6 @@ class Clock:
     
 c1 = Clock(1000)
 c2 = Clock(2005)
-c3 = c2 * 36
+c3 = c2 * 2
 
 print(c3.get_time())

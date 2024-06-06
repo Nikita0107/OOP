@@ -69,19 +69,21 @@ class Moped(MeansOFTransport):
         return distance / speed_Max
 
 
-print(Moped.calculate_time(100, 20))
+# print(Moped.calculate_time(100, 20))
 ts = MeansOFTransport('red', 'BMW')
 ts.qwert = 12
 ts.z = 5
-car = Car('red', 'BMW', 4)
-print(ts.calor, ts.brand, ts.qwe)
-print(Car._car1)
-print(Car.car_drive)
-print(Car.Conclusion(6))
-print(Car.car_drive)
-print(str(car))
-print(repr(car))
+car = Car('reds', 'BMW', 4)
+# print(ts.calor, ts.brand, ts.qwe)
+# print(Car._car1)
+# print(Car.car_drive)
+# print(Car.Conclusion(6))
+# print(Car.car_drive)
+# print(str(car))
+# print(repr(car))
 print(len(car.calor))
-print(car[0])
-print(car[2])
-# del car.calor
+# print(car[0])
+# print(car[2])
+# # del car.calor
+# for i in car:
+#     print(i)
